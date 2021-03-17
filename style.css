@@ -1,0 +1,59 @@
+/* Mobile en portrait (320px à 414px) - Pour les appareils avec des écrans de 4" à 6,9".
+Mobile en paysage (568px à 812px) - Idem, mais en paysage.
+Tablette en portrait (768px à 834px) - Pour les appareils de 7" à 10".
+Tablette en paysage (1024px à 1112px) - Idem, mais aussi tablettes 12" en portrait.
+Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais généralement de 1200px et plus.*/
+
+*{
+    margin: 0px;
+}
+
+/* Au niveau le plus haut du code */
+@media screen and (max-width: 600px) {
+    
+  
+
+  .menuFooter{
+      width: auto;
+      height: 100%;
+      background-color: rgb(255, 0, 200);
+      border :blueviolet 1px solid;
+      display: flex;
+      align-items: space-between;
+  }
+
+  .buttonOnMenu{
+      width: 20%;
+      height: 40%;
+      border-radius: 25% 10%;
+      margin-top: 2%;
+      margin-right: 15%;
+      margin-bottom: 2%;
+      font-family: 'Roboto', Courier, monospace;
+      text-align: center;
+  }
+}
+
+/* Au niveau le plus haut du code */
+@media screen and (min-width: 601px) {
+
+  .menuFooter{
+      width: auto;
+      height: 100%;
+      background-color: rgb(72, 255, 0);
+      border :blueviolet 1px solid;
+     
+     
+  }
+
+  .buttonOnMenu{
+      width: 15%;
+      height: 40%;
+      border-radius: 45% 5%;
+      margin-top: 2%;
+      margin-right: 15%;
+      margin-bottom: 2%;
+      font-family: 'Roboto', Courier, monospace;
+      text-align: center;
+  }
+}
