@@ -59,13 +59,15 @@ h1 {
 }
 
 .card-body h2 {
-  margin: 10px 0px;
-  font-size: 22px;;
+  margin-bottom: 15px;
+  font-size: 17px;;
 }
 
 .card-text {
   font-style: oblique;
-  line-height: 20px;
+  line-height: 0px;
+  font-size: 14px;
+  margin-bottom: 20px;
 }
 
 .card-button {
@@ -83,6 +85,7 @@ h1 {
 .card-button:hover {
   background-color: #f59496;
   transition: all 0.3s ease;
+  color: black;
 }
 
 /* The Modal (background) */
@@ -187,6 +190,7 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
 .buttonOnMenu:hover {
   background-color: #f59496;
   transition: all 0.3s ease;
+  color: black;
 }
 
 /* Au niveau le plus haut du code
