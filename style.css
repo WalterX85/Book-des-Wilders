@@ -20,8 +20,8 @@ body {
 
 h1 {
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   font-weight: 900;
   font-size: 35px;
   color: #f1696c;
@@ -160,6 +160,7 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
   /*border :#f1696c 1px solid;*/
   background-color: #f1696c;
   text-align: center;
+  padding: 20px;
 }
 
 .buttonOnMenu {
