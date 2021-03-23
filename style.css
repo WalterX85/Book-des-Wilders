@@ -11,9 +11,14 @@
 body {
   padding: 0;
   margin: 0;
+  /*background-image: url("https://nsa40.casimages.com/img/2021/03/22/21032209071778278.png");*/
+  background-image: url("https://nsa40.casimages.com/img/2021/03/22/210322092633616262.png");
+  background-size: 120%;
+  background-position: -100px -100px;
+  background-color: whitesmoke;
 }
 
-#banner {
+/*#banner {
   background-color: black;
   text-align: center;
 }
@@ -26,6 +31,12 @@ h1 {
   font-size: 35px;
   color: #f1696c;
   background-color: dimgrey;
+}*/
+
+#title-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cards {
@@ -35,6 +46,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 .card {
@@ -44,6 +56,7 @@ h1 {
   display: flex;
   flex-direction: column;
   box-shadow: 8px 8px 20px lightgray;
+  background-color: whitesmoke;
 }
 
 .card-img {
