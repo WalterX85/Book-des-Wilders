@@ -135,8 +135,8 @@ body {
   background-color: whitesmoke;
   margin: auto;
   padding: 20px;
-  width: 680px;
-  height: 650px;
+  width: 500px;
+  height: 640px;
   border-radius: 10px;
 }
 
@@ -150,8 +150,8 @@ body {
   background-color: whitesmoke;
   margin: auto;
   padding: 20px;
-  width: 680px;
-  height: 650px;
+  width: 500px;
+  height: 580px;
   border-radius: 10px;
 }
 
@@ -165,8 +165,8 @@ body {
   background-color: whitesmoke;
   margin: auto;
   padding: 20px;
-  width: 680px;
-  height: 450px;
+  width: 500px;
+  height: 540px;
   border-radius: 10px;
 }
 
@@ -210,11 +210,14 @@ body {
 
 .modal-wild {
   grid-area: modal-wild;
+  width: 420px;
 }
 
 .modal-title {
   grid-area: modal-title;
   text-align: center;
+  font-size: 30px;
+  margin-top: -2px;
 }
 
 .modal-img {
@@ -245,12 +248,27 @@ body {
   grid-area: navModalText1;
   height: 200px;
   text-align: left;
-  margin-top: -20px;
+  margin-top: -60px;
   margin-bottom: 15px;
+}
+
+.wildTitle {
+  color: #f1696c;
+}
+
+#promoTitle {
+  font-size: 22.8px ;
+  color: #f1696c;
+  width: 430px;
+}
+
+#promo-img {
+  width: 420px;
 }
 
 .navModalText2 {
   grid-area: navModalText2;
+  width: 430px;
   height: 200px;
   text-align: left;
   /*margin-top: -20px;
@@ -265,14 +283,25 @@ body {
   margin-bottom: 15px;*/
 }
 
+.clement {
+  color: black;
+  font-size: 22px;
+}
+
+.clement:hover {
+  transition: 0.5s;
+  color: #f1696c;
+  cursor: pointer;
+}
+
 .wildLink {
   grid-area: wildLink;
-  margin-top: 15px;
+  margin-top: 30px;
 }
 
 .logo-wild {
   grid-area: logo-wild;
-  margin-top: 15px;
+  margin-top: 30px;
 }
 
 /* Travail Pascal sur réseaux */
@@ -282,6 +311,7 @@ body {
   font-size: 15px ;
   font-weight: bold;
   background-color: gainsboro;
+  height: 100px;
   border-radius: 10px;
 }
 
@@ -309,11 +339,11 @@ body {
   color: #fff;
 }
 
-ul li:nth-child(1){
+ul li:nth-child(1) {
   background: #3b5999;
 }
 
-ul li:nth-child(2){
+ul li:nth-child(2) {
   background: #55acee;
 }
 
@@ -368,5 +398,80 @@ ul li:hover {
     position: sticky;
     top: 0;
     order: initial;
+  }
+
+  .navModalContent1 {
+    display: grid;
+    grid-template-columns: 25px 1fr 1fr;
+    grid-template-rows: 25px 1fr 1fr 1fr;
+    grid-template-areas:
+    "navClose1 . ."
+    ". modal-wild modal-wild"
+    ". navModalText1 navModalText1"
+    ". wildLink logo-wild";
+    background-color: whitesmoke;
+    margin: auto;
+    padding: 20px;
+    width: 680px;
+    height: 630px;
+    border-radius: 10px;
+  }
+
+  .modal-wild {
+    width: 600px;
+  }
+
+  .navModalText1 {
+    height: 200px;
+    text-align: left;
+    margin: 0;
+  }
+
+  .navModalContent2 {
+    display: grid;
+    grid-template-columns: 25px 1fr;
+    grid-template-rows: 25px 1fr;
+    grid-template-areas:
+    "navClose2 ."
+    ". navModalText2";
+    background-color: whitesmoke;
+    margin: auto;
+    padding: 20px;
+    width: 680px;
+    height: 540px;
+    border-radius: 10px;
+  }
+
+  #promoTitle {
+    font-size: 22.8px ;
+    color: #f1696c;
+    width: 650px;
+  }
+
+  #promo-img {
+    width: 600px;
+  }
+
+  .navModalText2 {
+    height: 200px;
+    width: 100%;
+    text-align: left;
+    margin-top: -20px;
+    margin-bottom: 15px;
+  }
+
+  .navModalContent3 {
+    display: grid;
+    grid-template-columns: 25px 1fr;
+    grid-template-rows: 25px 1fr;
+    grid-template-areas:
+    "navClose3 ."
+    ". navModalText3";
+    background-color: whitesmoke;
+    margin: auto;
+    padding: 20px;
+    width: 680px;
+    height: 490px;
+    border-radius: 10px;
   }
 }
