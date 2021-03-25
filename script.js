@@ -37,9 +37,10 @@ const navClose1 = document.querySelectorAll(".navClose1");
 const navClose2 = document.querySelectorAll(".navClose2");
 const navClose3 = document.querySelectorAll(".navClose3");
 
-for(let i=0; i<close.length; i++) {
-  close[i].onclick = function() {
-    modals[i].style.display = "none";
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
   }
 };
 for(let i=0; i<navClose1.length; i++) {
@@ -58,10 +59,29 @@ for(let i=0; i<navClose3.length; i++) {
   }
 };
 
+// Get the modal
+const wild = document.getElementById("wild");
+
+// Get the button that opens the modal
+const buttonOnMenu = document.querySelector(".buttonOnMenu");
+
+// Get the <span> element that closes the modal
+const fermer = document.getElementsByClassName("fermer")[0];
+
+// When the user clicks the button, open the modal 
+buttonOnMenu.onclick = function() {
+  wild.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+fermer.onclick = function() {
+  wild.style.display = "none";
+}
+
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-  if (event.target.classList.contains("modal")) {
-    event.target.style.display = "none";
+  if (event.target == wild) {
+    wild.style.display = "none";
   }
 };
 window.onclick = function(event) {

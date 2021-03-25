@@ -91,8 +91,7 @@ body {
   color: black;
 }
 
-/* The Modal (background) */
-.modal {
+.modal, .navModal1, .navModal2, .navModal3 {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -106,7 +105,6 @@ body {
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-/* Modal Content */
 .modal-content {
   display: grid;
   grid-template-columns: 10px 1fr 1fr;
@@ -121,7 +119,54 @@ body {
   margin: auto;
   padding: 20px;
   width: 450px;
+  height: 700px;
+  border-radius: 10px;
+}
+
+.navModalContent1 {
+  display: grid;
+  grid-template-columns: 25px 1fr 1fr;
+  grid-template-rows: 25px 1fr 1fr 1fr;
+  grid-template-areas:
+    "navClose1 . ."
+    ". modal-wild modal-wild"
+    ". navModalText1 navModalText1"
+    ". wildLink logo-wild";
+  background-color: whitesmoke;
+  margin: auto;
+  padding: 20px;
+  width: 680px;
   height: 650px;
+  border-radius: 10px;
+}
+
+.navModalContent2 {
+  display: grid;
+  grid-template-columns: 25px 1fr;
+  grid-template-rows: 25px 1fr;
+  grid-template-areas:
+  "navClose2 ."
+  ". navModalText2";
+  background-color: whitesmoke;
+  margin: auto;
+  padding: 20px;
+  width: 680px;
+  height: 650px;
+  border-radius: 10px;
+}
+
+.navModalContent3 {
+  display: grid;
+  grid-template-columns: 25px 1fr;
+  grid-template-rows: 25px 1fr;
+  grid-template-areas:
+  "navClose3 ."
+  ". navModalText3";
+  background-color: whitesmoke;
+  margin: auto;
+  padding: 20px;
+  width: 680px;
+  height: 450px;
   border-radius: 10px;
 }
 
@@ -132,8 +177,39 @@ body {
   color: black;
 }
 
-.close:hover {
+.navClose1 {
+  grid-area: navClose1;
+  cursor: pointer;
+  font-size: 38px;
+  color: black;
+  margin-left: -10px;
+  margin-top: -14px;
+}
+
+.navClose2 {
+  grid-area: navClose2;
+  cursor: pointer;
+  font-size: 38px;
+  color: black;
+  margin-left: -10px;
+  margin-top: -14px;
+}
+
+.navClose3 {
+  grid-area: navClose3;
+  cursor: pointer;
+  font-size: 38px;
+  color: black;
+  margin-left: -10px;
+  margin-top: -14px;
+}
+
+.close:hover, .navClose1:hover, .navClose2:hover, .navClose3:hover {
   opacity: 50%;
+}
+
+.modal-wild {
+  grid-area: modal-wild;
 }
 
 .modal-title {
@@ -151,16 +227,52 @@ body {
 
 .modal-info {
   grid-area: modal-info;
+  margin-top: 25px;
+  margin-bottom: 10px;
 }
 
 .modal-text {
   grid-area: modal-text;
   height: 200px;
   text-align: left;
-  overflow-y: scroll;
+  /*overflow-y: scroll;
   scrollbar-color: grey;
-  scrollbar-width: auto;
+  scrollbar-width: auto;*/
   margin-bottom: 15px;
+}
+
+.navModalText1 {
+  grid-area: navModalText1;
+  height: 200px;
+  text-align: left;
+  margin-top: -20px;
+  margin-bottom: 15px;
+}
+
+.navModalText2 {
+  grid-area: navModalText2;
+  height: 200px;
+  text-align: left;
+  /*margin-top: -20px;
+  margin-bottom: 15px;*/
+}
+
+.navModalText3 {
+  grid-area: navModalText3;
+  height: 200px;
+  text-align: left;
+  /*margin-top: -20px;
+  margin-bottom: 15px;*/
+}
+
+.wildLink {
+  grid-area: wildLink;
+  margin-top: 15px;
+}
+
+.logo-wild {
+  grid-area: logo-wild;
+  margin-top: 15px;
 }
 
 /* Travail Pascal sur réseaux */
@@ -210,20 +322,7 @@ ul li:hover {
   box-shadow: 0 10px 10px rgba(255,255,255,.2);
 }
 
-.navBar {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  height: 100%;
-  background-color: #f1696c;
-  text-align: center;
-  padding: 15px;
-  position: sticky;
-  bottom: 0;
-  order: 1;
-}
-
-.buttonOnMenu {
+.buttonOnMenu1, .buttonOnMenu2, .buttonOnMenu3 {
   border: none;
   border-radius: 10px;
   height: 50px;
@@ -237,10 +336,23 @@ ul li:hover {
   text-align: center;
 }
 
-.buttonOnMenu:hover {
+.buttonOnMenu1:hover, .buttonOnMenu2:hover, .buttonOnMenu3:hover {
   background-color: #f59496;
   transition: all 0.3s ease;
   color: black;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  background-color: #f1696c;
+  text-align: center;
+  padding: 15px;
+  position: sticky;
+  bottom: 0;
+  order: 1;
 }
 
 @media screen and (min-width: 993px) {

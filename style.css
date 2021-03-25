@@ -1,14 +1,6 @@
-/*@media screen and (min-width: 601px)*/
-/*@media screen and (max-width: 600px) */
-
-/* Mobile en portrait (320px à 414px) - Pour les appareils avec des écrans de 4" à 6,9".
-Mobile en paysage (568px à 812px) - Idem, mais en paysage.
-Tablette en portrait (768px à 834px) - Pour les appareils de 7" à 10".
-Tablette en paysage (1024px à 1112px) - Idem, mais aussi tablettes 12" en portrait.
-Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais généralement de 1200px et plus.*/
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
 
 * {
   margin: 0;
@@ -22,11 +14,27 @@ body {
   flex-direction: column;
   padding: 0;
   margin: 0;
+  /*background-image: url("https://nsa40.casimages.com/img/2021/03/22/21032209071778278.png");*/
   background-image: url("https://nsa40.casimages.com/img/2021/03/22/210322092633616262.png");
-  background-size: 130%;
+  background-size: 120%;
   background-position: -100px -100px;
   background-color: whitesmoke;
 }
+
+/*#banner {
+  background-color: black;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: 900;
+  font-size: 35px;
+  color: #f1696c;
+  background-color: dimgrey;
+}*/
 
 #title-img {
   display: block;
@@ -40,6 +48,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 .card {
@@ -54,6 +63,8 @@ body {
 
 .card-img {
   border-radius: 10px 10px 0 0;
+  /*background-size: cover;*/
+  /*background-position: center;*/
   height: 200px;
   width: 100%;
 }
@@ -107,15 +118,13 @@ body {
 
 .modal-content {
   display: grid;
-  grid-template-columns: 10px 1fr 1fr;
-  grid-template-rows: 10px 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:
-  "close . ."
-  ". modal-title modal-img"
-  ". modal-info modal-info"
-  ". modal-text modal-text"
-  ". contact contact";
-  background-color: whitesmoke;
+  "close card-title . card-img-big"
+  "big-card-text-2 big-card-text-2 big-card-text-2 big-card-text-2"
+  "big-card-text-2 big-card-text-2 big-card-text-2 big-card-text-2";
+  background-color: #fefefe;
   margin: auto;
   padding: 20px;
   width: 450px;
@@ -217,12 +226,14 @@ body {
   text-align: center;
 }
 
-.modal-img {
-  grid-area: modal-img;
+.big-card-img {
+  /*grid-column: 3 / 4;*/
   border-radius: 10px;
+  background-position: center;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  grid-area: card-img-big;
 }
 
 .modal-info {
@@ -283,57 +294,49 @@ body {
   font-weight: bold;
   background-color: gainsboro;
   border-radius: 10px;
+  background-position: center;
+  width: 100%;
 }
 
-.reseaux {
-  margin: 15px 0 0 0;
-  text-align: center;
+.card-title {
+  /*grid-column: 1 / 4;*/
+  grid-area: card-title;
 }
 
-.reseaux ul {
-  display: flex;
-  justify-content: center;
+.big-card-text {
+  /*grid-column: 1 / 4;*/
+  margin-bottom: 20px;
+  grid-area: big-card-text-2;
 }
 
-.reseaux ul li {
-  margin: 15px;
-  list-style: none;
-  font-size: 25px;
-  transition: 0.5s;
-  border-radius: 15%;
-}
+/* Mobile en portrait (320px à 414px) - Pour les appareils avec des écrans de 4" à 6,9".
+Mobile en paysage (568px à 812px) - Idem, mais en paysage.
+Tablette en portrait (768px à 834px) - Pour les appareils de 7" à 10".
+Tablette en paysage (1024px à 1112px) - Idem, mais aussi tablettes 12" en portrait.
+Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais généralement de 1200px et plus.*/
 
-.reseaux ul li a {
-  width: 60px;
-  padding: 10px;
-  color: #fff;
-}
-
-ul li:nth-child(1){
-  background: #3b5999;
-}
-
-ul li:nth-child(2){
-  background: #55acee;
-}
-
-ul li:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 10px rgba(255,255,255,.2);
-}
+/* Au niveau le plus haut du code 
+@media screen and (max-width: 600px) {*/
 
 .buttonOnMenu1, .buttonOnMenu2, .buttonOnMenu3 {
   border: none;
   border-radius: 10px;
   height: 50px;
   background-color: #f1696c;
-  box-shadow: 0 0 0 0.2rem white;
   width: 100px;
   font-weight: bold;
   color: whitesmoke;
   font-size: 18px;
   cursor: pointer;
   text-align: center;
+  /*width: 20%;
+  height: 40%;
+  border-radius: 25% 10%;
+  margin-top: 2%;
+  margin-right: 15%;
+  margin-bottom: 2%;
+  font-family: 'Roboto', Courier, monospace;
+  text-align: center;*/
 }
 
 .buttonOnMenu1:hover, .buttonOnMenu2:hover, .buttonOnMenu3:hover {
