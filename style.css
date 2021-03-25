@@ -18,6 +18,8 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   padding: 0;
   margin: 0;
   background-image: url("https://nsa40.casimages.com/img/2021/03/22/210322092633616262.png");
@@ -33,7 +35,6 @@ body {
 }
 
 .cards {
-  margin-top: 10px;
   align-items: center;
   flex-wrap: wrap;
   display: flex;
@@ -157,8 +158,8 @@ body {
   height: 200px;
   text-align: left;
   overflow-y: scroll;
-  scrollbar-color: rebeccapurple green;
-  scrollbar-width: thin;
+  scrollbar-color: grey;
+  scrollbar-width: auto;
   margin-bottom: 15px;
 }
 
@@ -209,7 +210,7 @@ ul li:hover {
   box-shadow: 0 10px 10px rgba(255,255,255,.2);
 }
 
-#menuFooter {
+.navBar {
   display: flex;
   justify-content: space-around;
   width: 100%;
@@ -217,6 +218,9 @@ ul li:hover {
   background-color: #f1696c;
   text-align: center;
   padding: 15px;
+  position: sticky;
+  bottom: 0;
+  order: 1;
 }
 
 .buttonOnMenu {
@@ -237,4 +241,20 @@ ul li:hover {
   background-color: #f59496;
   transition: all 0.3s ease;
   color: black;
+}
+
+@media screen and (min-width: 993px) {
+
+  .navBar {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    background-color: #f1696c;
+    text-align: center;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    order: initial;
+  }
 }
