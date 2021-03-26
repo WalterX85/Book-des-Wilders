@@ -1,0 +1,29 @@
+Présentation;
+
+Consignes; les slides doivent etre simple et efficace, qqs mots forts pour illustrer le contenu des slides 3/4/5, nous les developperons au moment de la prise de parole.
+L'objectif est de rendre vivant le slide, on crée l'intéraction. L'orateur ne doit jamais se contenter de lire un slide avec une lecture à la vue de tous.
+
+Etape 1:  Maquette; En guise de rappel, on ne s'y attarde pas, on représente le projet rapidement pour l'introduire sur ce premier slide. Pour ce dernier feedback nous avons bien davantage à proposer qu'une esquisse. On avance!
+
+Etape 2: MVP; Revenir sur les étapes qui restaient à accomplir la semaine passée. Revenir sur la chronologie du projet. Meme chose que l'étape 1, on avance, on revient point par point sur les avancées semaine dans les 3 prochaines étapes.
+
+Etape 3:  Eléments de contenus:
+- Rédaction des profils zoom et des bouttons.
+- Valorisation des atouts et des succes de chaque wilders, faire ressortir un fil conducteur.
+- Lien d'offres stages groupé, contact, présentation école, a propos...
+- Nouvelles informations intégrées; mobilité et secteur d'activité.
+Merci a chacun d'entre vous pour le temps que vous avez pu accordé a notre projet!
+
+Etape 4: Ajustements Techniques
+- Duplication des boutons profil zoom sur menufooter ---> Homogénéité 
+- Média quéries et responsive
+- Agencement du contenu à l'intérieur du profil zoom
+- Intégration des widgets
+- Configuration des menus sticky selon les viewports
+
+Etape 5: Charte graphique
+- Identification du charte graphique, un code couleur de rouge, blanc, gris avec un design orienté graphique.
+- Création d'un logo
+- Création d'un background
+
+Etape 6: Présentation du proto et navigation.
