@@ -295,13 +295,15 @@ body {
 }
 
 .wildLink {
-  grid-area: wildLink;
-  margin-top: 30px;
+  display: flex;
+  margin-top: 70px;
 }
 
 .logo-wild {
-  grid-area: logo-wild;
-  margin-top: 30px;
+  display: flex;
+  float: right;
+  margin-top: -50px;
+  margin-right: 15px;
 }
 
 /* Travail Pascal sur réseaux */
@@ -438,7 +440,7 @@ ul li:hover {
     margin: auto;
     padding: 20px;
     width: 680px;
-    height: 540px;
+    height: 590px;
     border-radius: 10px;
   }
 
@@ -446,6 +448,7 @@ ul li:hover {
     font-size: 22.8px ;
     color: #f1696c;
     width: 650px;
+    margin-top: 10px;
   }
 
   #promo-img {
@@ -454,7 +457,7 @@ ul li:hover {
 
   .navModalText2 {
     height: 200px;
-    width: 100%;
+    width: 600px;
     text-align: left;
     margin-top: -20px;
     margin-bottom: 15px;
